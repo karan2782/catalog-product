@@ -4,12 +4,24 @@
   padding: 0;
   font-family: sans-serif;
 }
-
+body{
+  background:linear-gradient( rgba(245, 241, 242, 0.993), rgba(235, 229, 235, 0.938));
+}
 .logo > h2 {
   font-family: "Playwrite AT";
   font-optical-sizing: auto;
   font-weight: bold;
   font-style: normal;
+  color: rgb(101, 72, 180);
+}
+.logo{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 70%;
+  height: 50px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav {
@@ -17,11 +29,16 @@
   justify-content: space-around;
   align-items: center;
   height: 70px;
-  background-color: rgba(250, 250, 250, 0.486);
+  background:linear-gradient( rgba(235, 174, 188, 0.37), rgba(235, 174, 235, 0.24)) ;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
+}
+.about p{
+  color: rgb(101, 72, 180);
+  font-weight: bold;
+  text-align: center;
 }
 .nav > ul {
   display: flex;
@@ -32,12 +49,16 @@
   text-decoration: none;
   font-size: 20px;
 }
+.nav>ul a:hover{
+  color:rgb(235, 216, 219);
+}
 
 .image {
   width: 200px;
 }
 .image > img {
   width: 100%;
+  border-radius: 10px;
 }
 
 .about {
@@ -49,6 +70,7 @@
   background-color: rgb(235, 216, 219);
   border: 1px solid rgb(240, 235, 236);
   border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .product-box {
   border: 1px solid rgb(238, 208, 213);
@@ -59,6 +81,9 @@
   align-items: center;
   padding: 10px 0;
   border-radius: 10px;
+  background-color: rgb(252, 246, 246);
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .product-section {
   margin: auto;
@@ -80,7 +105,7 @@
   justify-items: center;
 }
 .about-section {
-  margin: 100px 0 100px 0;
+  margin: 150px 0 100px 0;
 }
 
 footer {
@@ -100,6 +125,12 @@ footer p {
 }
 main {
   margin: auto;
+}
+
+footer li a svg:hover{
+  color:rgb(238, 208, 213);
+  height: 20px;
+
 }
 
 @media screen and (max-width: 600px) {
@@ -124,6 +155,12 @@ main {
   footer p {
     margin: 10px 0;
     font-size: 14px;
+  }
+  .logo>h2{
+    font-size: 16px;
+  }
+  .logo{
+    width: 126px;
   }
 }
 
